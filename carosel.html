@@ -1,18 +1,44 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
-    <link rel="stylesheet" type="text/css" href="styles/index.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="styles/carosel.css">
+
+    <script type="text/javascript" src="js/carosel.js"></script>
+
         <meta charset="utf-8">
         <title></title>
       </head>
       <body>
-        <div id="fotorama" class="fotorama" data-width="100%";
-        data-autoplay="true"; data-transition="crossfade";>
-          <img src="http://s.fotorama.io/1.jpg">
-          <img src="http://s.fotorama.io/2.jpg">
-      </div>
+        <div class="carosel">
+
+          <div class="mySlides fade">
+
+           <img src="IMAGES/slider/1.jpg" style="width:100%">
+
+         </div>
+
+         <div class="mySlides fade">
+
+          <img src="IMAGES/slider/2.jpg" style="width:100%">
+
+        </div>
+
+
+      		<a class="navigation" id="nav-left" >&#10094;</a>
+      		<a class="navigation" id="nav-right" >&#10095;</a>
+
+
+
+      	</div >
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+
+        </div>
 
       </body>
 </html>

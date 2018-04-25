@@ -85,7 +85,7 @@ body{
 
 /* /_CAROSEL CONTENT _/ */
 
-.fotorama{
+/* .fotorama{
 background-color: #262625;
 
 }
@@ -167,7 +167,7 @@ float: left;
 .navigation:focus {
 	outline: none;
 	 transition: box-shadow .3s ease;
-}
+} */
 
 
 /* CATEGORIES PART CSS */
