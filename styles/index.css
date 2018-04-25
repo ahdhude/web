@@ -17,13 +17,7 @@ body{
 
 /* /_this is the navbar section_/ */
 
-.sticky {
-  position: fixed;
 
-  width: 100%;
-	background-color: white;
-	z-index: 1;
-}
 
 
 
@@ -31,6 +25,11 @@ body{
 
      font-family:Raleway;
      height: 50px;
+		 position: fixed;
+
+	   width: 100%;
+	 	background-color: white;
+	 	z-index: 1;
 
 }
 
