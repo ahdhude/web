@@ -1,0 +1,448 @@
+/* whole page styles */
+
+body{
+	margin: 0px;
+
+
+}
+
+/* fonts */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Raleway ExtraLight'), local('Raleway-ExtraLight'), url(Raleway.woff) format('woff');
+}
+
+
+/* /_this is the navbar section_/ */
+
+.sticky {
+  position: fixed;
+
+  width: 100%;
+	background-color: white;
+	z-index: 1;
+}
+
+
+
+.nav-bar{
+
+     font-family:Raleway;
+     height: 50px;
+
+}
+
+.logo img{
+
+    height: 41px;
+    padding: 5px;
+
+}
+
+.PagesLink {
+  	 list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;font-family:Raleway;
+    margin-right: 15%;
+    background-color: #FFFFFF;
+}
+
+.PagesLink li {
+    float: left;
+		height: 50px;
+}
+
+.PagesLink li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+
+.PagesLink li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.PagesLink li a.active {
+    color: white;
+    background-color: #4BA2DC;
+}
+.logo{
+
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin-left: 15%;
+
+}
+
+/* /_CAROSEL CONTENT _/ */
+
+.fotorama{
+background-color: #262625;
+
+}
+
+#carosel{
+    position:relative;
+    height: 600px;
+	overflow: hidden;
+float: left;
+}
+
+#carosel ul{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	list-style: none;
+	float: left;
+
+}
+
+#carosel ul li{
+	position: relative;
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+
+
+}
+
+#carosel ul li img{
+	margin: 0;
+	padding: 0;
+	height:100%;
+  width:100%;
+
+}
+
+.navigation {
+	position:  absolute;
+	border: none;
+	padding: 0;
+	background-color: rgba(35,35,35,0.8);
+	height: 34px;
+	width: 34px;
+	color:  #FFF;
+	font-size: 20px;
+	text-align: center;
+	top: 176px;
+	z-index: 10;
+	margin-top: 10%
+
+}
+
+#nav-left {
+	left: 10px;
+}
+#nav-right {
+	right: 10px;
+}
+
+.navigation:visited  {
+	text-decoration: none;
+}
+.navigation:hover {
+
+    height: 50px;
+    width: 50px;
+    top: 168px;
+     transition: box-shadow .3s ease;
+
+}
+
+.navigation:active {
+	text-decoration: none;
+}
+.navigation:focus {
+	outline: none;
+	 transition: box-shadow .3s ease;
+}
+
+
+/* CATEGORIES PART CSS */
+
+.categories{
+	height: 600px;
+		background-color: #51A4DA;
+	float: left;
+	width: 100%;
+
+
+
+}
+
+
+.cat-header{
+
+	text-align: center;
+
+}
+
+.cat-header h1{
+	 font-family:Raleway;
+	 font-size: 40px;
+	 font-weight: bold;
+	 float: left;
+width: 100%;
+
+	color: white;
+
+
+}
+
+
+.cat-cell{
+height: 224px;
+width:240px;
+
+}
+
+.cat-cell img {
+
+
+	width: 70%;
+	height: 70%;
+
+
+}
+
+.cat-cell p{
+
+	color: white;
+	font-family:Raleway;
+	font-size: 15px;
+	margin-top: 6%;
+	margin-bottom: 0;
+}
+
+
+
+ td, th {
+    border: 1px solid #bddeff;
+}
+
+.cat-table{
+
+border-collapse: collapse;
+margin-left:15%;
+    margin-right:15%;
+		text-align: center;
+}
+
+.cat-cell:hover{
+	height:105px;
+
+	cursor: pointer;
+
+	transition: .3s cubic-bezier(.3, 0, 0, 1.3)
+}
+
+
+/* CONTACT FORM */
+
+.contact-section h1,p{
+	font-family: Raleway;
+	color: white;
+
+}
+
+.contact-section{
+
+	height: 450px;
+text-align: center;
+float: left;
+background-color: #262625;
+width: 100%;
+}
+
+
+.contact input,textarea{
+background-color: #999;
+background: rgba(0,0,0,0.2);
+border: 1px solid #373737;
+font-family: Raleway;
+font-size: 15px;
+color: white;
+
+}
+
+.contact input[type="text"] {
+    width: 300px;
+		height: 30px;
+		text-indent: 10px;
+
+}
+
+.contact textarea {
+    width: 604px;
+		height: 200px;
+		text-indent: 10px;
+		margin-top: 10px;
+
+}
+
+.contact button{
+	color: #fff;
+	background-color: #4ba2dc;
+	border: none;
+	height: 30px;
+	font-family: Raleway;
+}
+
+.contact button:hover{
+
+	background-color: #575a5e;
+}
+
+
+/* FOOTER */
+
+
+.footer{
+
+	height: 100px;
+	background-color: #4ba2dc;
+	color: #fff;
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+
+
+.icon-list{
+
+	    margin-left: 40%;
+}
+.social-icons{
+ list-style: none;
+
+
+
+}
+
+.social-icons li{
+	float: left;
+	margin-left: 10px;
+
+
+
+}
+
+.social-icons li a{
+color: white;
+font-size: 25px;
+
+}
+
+
+.copyright p{
+	float: left;
+margin-left: -172px;
+margin-top: 30px;
+}
+
+
+/* SIGN UP AND SIGN IN */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+	box-sizing: border-box
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+		 transition: box-shadow .3s ease;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+
+
+.close:hover {
+    color: #f44336;
+	cursor: pointer;
+
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container input[type=text],.container input[type=password] {
+    width: -webkit-fill-available;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+.container input[type=text]:focus, .container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+.container button {
+    background-color: #429ef4;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #4165f4;
+}
+
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+
+.container {
+    padding: 16px;
+}

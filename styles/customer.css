@@ -1,0 +1,291 @@
+/* fonts */
+@font-face {
+  font-family: 'Roboto-Regular';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Roboto ExtraLight'), local('Roboto-ExtraLight'), url(Roboto-Regular.woff) format('woff');
+  letter-spacing: 0.01rem;
+}
+
+/* roboto-condensed-regular - latin */
+@font-face {
+  font-family: 'Roboto-Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto ExtraLight'), local('Roboto-ExtraLight'), url(Roboto-Condensed.woff) format('woff');
+
+
+
+}
+
+
+/* NAGVIGATION */
+
+
+body {margin:0}
+
+
+/* LOGIN INFO */
+.login-info{
+  float: left;
+  width: 200px;
+  text-align: center;
+  font-size: 36px;
+  color: white;
+      margin: auto;
+}
+
+.login-account p{
+
+      font-size: 15px;
+}
+
+.icon-bar {
+
+    background-color: #555;
+
+        margin-top: 285px;
+}
+
+
+
+.icon-bar a i{
+  margin-right: 10px;
+}
+
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+    text-decoration:none;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.active {
+    background-color: #4CAF50 !important;
+}
+
+
+.icon-bar-holder{
+  width: 15%;
+    height: 1080px;
+    background-color: #4D4D50;
+    float: left;
+}
+
+/* content */
+
+
+.content{
+  width: 85%;
+  height: 1080px;
+  float: left;
+  background-color: #F5F5F5;
+}
+
+
+/* table styles */
+
+
+/* Material Design shadows*/
+
+.shadow-z-1 {
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.12),
+                      0 1px 2px 0 rgba(0,0,0,.24);
+  -moz-box-shadow:    0 1px 3px 0 rgba(0,0,0,.12),
+                      0 1px 2px 0 rgba(0,0,0,.24);
+  box-shadow:         0 1px 3px 0 rgba(0,0,0,.12),
+                      0 1px 2px 0 rgba(0,0,0,.24);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(https://fonts.googleapis.com/css?family=Roboto);
+}
+
+
+.table-header{
+  text-align: center;
+}
+
+#requests{
+  background-color: #fff;
+  border-color: #e0e0e0;
+  border-style: solid;
+  border-width: 0.5px;
+  table-cell-padding: 1.6rem;
+  margin:auto;
+
+  width: 800px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+
+
+}
+#requests tr{
+font-family: Roboto-Regular;
+font-weight: 100;
+color:#959595;
+
+
+}
+
+
+#requests tr th{
+font-family: Roboto-Regular;
+  font-weight: 500;
+  color: #757575;
+  text-align: left;
+        padding: @table-cell-padding;
+        vertical-align: top;
+        border-top: 0;
+        .transition(all .3s ease);
+        border-bottom: 1px solid #e0e0e0;
+}
+
+#requests tr:nth-child(odd){
+  background-color:#f5f5f5;
+}
+
+
+
+/* FORM STYLES */
+
+
+.book-form{
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.8em;
+width: 30em;
+padding: 1em;
+border: 1px solid #ccc;
+margin: auto;
+
+  width: 767px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+
+
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+/* Style the container */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.btn-submit{
+
+  text-align: center;
+
+}
+
+
+
+/* FILE UPLOAD  */
+
+
+.upload-form{
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.8em;
+width: 30em;
+padding: 1em;
+border: 1px solid #ccc;
+margin: auto;
+
+
+  width: 767px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+
+.upload-area{
+    width: 70%;
+    height: 200px;
+    border: 2px solid lightgray;
+    border-radius: 3px;
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+    overflow: auto;
+}
+
+.upload-area:hover{
+    cursor: pointer;
+}
+
+.upload-area h1{
+    text-align: center;
+    font-weight: normal;
+    font-family: sans-serif;
+    line-height: 50px;
+    color: darkslategray;
+}
+
+
+
+/* Thumbnail */
+.thumbnail{
+    width: 80px;
+    height: 80px;
+    padding: 2px;
+    border: 2px solid lightgray;
+    border-radius: 3px;
+    float: left;
+}

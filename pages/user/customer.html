@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../../styles/user.css ">
+    <link rel="stylesheet" type="text/css" href="../../styles/lightgallery.css ">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../../js/lightgallery-all.js" type="text/javascript"></script>
+    <script src="../../js/customer.js" type="text/javascript"></script>
+    
+  </head>
+  <body>
+    <div class="icon-bar-holder">
+      <div class="login-info">
+        <div class="avatar">
+          <i class="fas fa-user"></i>
+        </div>
+        <div class="login-account">
+          <p>someone@gmail.com</p>
+        </div>
+      </div>
+      <div class="icon-bar">
+        <a class="active" href="#"><i class="fas fa-calendar-alt"></i>Appoint</a>
+        <a href="#"><i class="fas fa-upload"></i>Upload</a>
+      </div>
+    </div>
+    <div class="content">
+      <div class="table-header">
+        <p>Requests</p>
+      </div>
+
+      <br>
+      <div class="book-form">
+        <form action="/action_page.php">
+          <div class="row">
+            <div class="col-25">
+              <label for="photographer">Photographer</label>
+            </div>
+            <div class="col-75">
+              <select id="photographer" name="photographer">
+                <option value="ali">Ali Mohamed</option>
+                <option value="zaki">Mohamed zaki</option>
+                <option value="Abdulla">Xahir </option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-25">
+              <label for="Date">Date Requested</label>
+            </div>
+            <div class="col-75">
+              <input type="date" name="" value="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="time">Time Requested</label>
+            </div>
+            <div class="col-75">
+              <input type="time" name="" value="">
+            </div>
+          </div>
+          <div class="btn-submit">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+      <!-- SCOND FORM UPLOAD -->
+      <div class="upload-form">
+        <div id="lightgallery">
+          <a href="img/img1.jpg">
+            <img src="img/thumb1.jpg" />
+          </a>
+          <a href="img/img2.jpg">
+            <img src="img/thumb2.jpg" />
+          </a>
+  ...
+      </div>
+      
+    </div>
+  </body>
+</html>
