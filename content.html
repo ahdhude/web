@@ -17,43 +17,7 @@
 
 <body>
 
-	<!-- <div class="nav-bar" id="navbar">
 
-		<div class="logo"><img src="images\logo.png"></div>
-
-		<ul class="PagesLink">
-
-
-			<li><a class="active" href="#carosel">Home</a></li>
-			<li><a href="#categories">Services</a></li>
-			<li><a href="#contact">Contact</a></li>
-			<li><a href="#login" onclick="document.getElementById('login').style.display='block'" style="width:auto;">Login</a></li>
-			<li><a href="#signup" onclick=" document.getElementById('signup').style.display='block'" style="width:auto;">Sign Up</a></li>
-
-		</ul>
-
-
-
-	</div> -->
-
-
-
-	<!-- <div id="carosel">
-
-		<ul>
-			<li><img src="images/slider/1.jpg"></li>
-			<li><img src="images/slider/2.jpg"></li>
-
-
-		</ul>
-
-
-		<button class="navigation" id="nav-left">&lt;</button>
-		<button class="navigation" id="nav-right">&gt;</button>
-
-
-
-	</div > -->
 
 	<div class="categories" id="categories">
 
@@ -167,6 +131,33 @@
       					<h1>Sign Up</h1>
 						<p>Please fill in this form to create an account.</p>
 						<hr>
+							<label for="Fname"><b>First Name</b></label>
+							<input type="text" placeholder="Enter First Name" name="Fname" required>
+
+							<label for="Fname"><b>Last Name</b></label>
+							<input type="text" placeholder="Enter Last Name" name="Lname" required>
+
+							<label for="Phone"><b>Phone Number </b></label>
+							<input type="text" placeholder="Enter Phone Number" name="Phone" required>
+
+							<label for="Address"><b>Address </b></label>
+							<input type="text" placeholder="Address" name="Address" required>
+
+							<label for="Atoll"><b>Atoll </b></label>
+							<select required class="Atoll-select" name="Atoll" >
+
+							</select>
+
+							<br>
+
+
+							<label for="Address"><b>Island </b></label>
+							<select required class="Island-select" name="Island" >
+
+							</select>
+
+							<br>
+
 						  <label for="email"><b>Email</b></label>
 						  <input type="text" placeholder="Enter Email" name="email" required>
 
@@ -196,7 +187,7 @@
 
 			<div id="login" class="modal">
 				<span onclick="document.getElementById('login').style.display='none'" class="close" title="Close"  >&times; </span>
-				<form class="modal-content" action="/action_page.php" style="border:1px solid #ccc">
+				<form class="modal-content2" action="/action_page.php" style="border:1px solid #ccc">
     				<div class="container">
       					      <label for="uname"><b>Username</b></label>
 							  <input type="text" placeholder="Enter Username" name="uname" required>

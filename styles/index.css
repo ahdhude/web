@@ -86,102 +86,19 @@ body{
 
 }
 
-/* /_CAROSEL CONTENT _/ */
-
-/* .fotorama{
-background-color: #262625;
-
-}
-
-#carosel{
-    position:relative;
-    height: 600px;
-	overflow: hidden;
-float: left;
-}
-
-#carosel ul{
-	position: relative;
-	margin: 0;
-	padding: 0;
-	height: 100%;
-	list-style: none;
-	float: left;
-
-}
-
-#carosel ul li{
-	position: relative;
-	display: block;
-	float: left;
-	margin: 0;
-	padding: 0;
-	width: 100%;
-
-
-}
-
-#carosel ul li img{
-	margin: 0;
-	padding: 0;
-	height:100%;
-  width:100%;
-
-}
-
-.navigation {
-	position:  absolute;
-	border: none;
-	padding: 0;
-	background-color: rgba(35,35,35,0.8);
-	height: 34px;
-	width: 34px;
-	color:  #FFF;
-	font-size: 20px;
-	text-align: center;
-	top: 176px;
-	z-index: 10;
-	margin-top: 10%
-
-}
-
-#nav-left {
-	left: 10px;
-}
-#nav-right {
-	right: 10px;
-}
-
-.navigation:visited  {
-	text-decoration: none;
-}
-.navigation:hover {
-
-    height: 50px;
-    width: 50px;
-    top: 168px;
-     transition: box-shadow .3s ease;
-
-}
-
-.navigation:active {
-	text-decoration: none;
-}
-.navigation:focus {
-	outline: none;
-	 transition: box-shadow .3s ease;
-} */
-
 
 /* CATEGORIES PART CSS */
+
+
+/* Used for bounce animation */
+
+
 
 .categories{
 	height: 600px;
 		background-color: #51A4DA;
 	float: left;
 	width: 100%;
-
-
 
 }
 
@@ -216,6 +133,7 @@ width:240px;
 
 	width: 70%;
 	height: 70%;
+	 transition: transform .2s;
 
 
 }
@@ -238,17 +156,13 @@ width:240px;
 .cat-table{
 
 border-collapse: collapse;
-margin-left:15%;
-    margin-right:15%;
+margin: auto;
 		text-align: center;
 }
 
-.cat-cell:hover{
-	height:105px;
+.cat-cell img:hover{
+	transform: scale(1.2);
 
-	cursor: pointer;
-
-	transition: .3s cubic-bezier(.3, 0, 0, 1.3)
 }
 
 
@@ -373,12 +287,26 @@ margin-top: 30px;
 }
 
 
+
+/* sign up form */
+
 .modal-content {
     background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    margin: 5% auto 15% auto;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 50%;
 		 transition: box-shadow .3s ease;
+		 font-family:Raleway;
+}
+
+/* login  form */
+.modal-content2 {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 20%;
+		 transition: box-shadow .3s ease;
+		 font-family:Raleway;
 }
 
 hr {
@@ -409,7 +337,7 @@ hr {
     display: table;
 }
 
-.container input[type=text],.container input[type=password] {
+.container input[type=text],.container input[type=password],.container select {
     width: -webkit-fill-available;
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -418,7 +346,7 @@ hr {
     background: #f1f1f1;
 }
 
-.container input[type=text]:focus, .container input[type=password]:focus {
+.container input[type=text]:focus, .container input[type=password]:focus, .container select:focus {
     background-color: #ddd;
     outline: none;
 }
