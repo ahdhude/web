@@ -16,11 +16,9 @@
 
 <body>
   <?php
-  
   include('nav.html');
   include ('carosel.html');
   include('content.html');
-
 ?>
 
 </body>
