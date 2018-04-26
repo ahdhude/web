@@ -2,8 +2,18 @@
 
 
 $(document).ready(function(){
-
   var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+
 
   $( "#nav-left" ).click(function() {
       plusSlides(-1);
@@ -17,15 +27,7 @@ $(document).ready(function(){
 
 
 
-  showSlides(slideIndex);
 
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
 
 
 
@@ -42,7 +44,7 @@ function showSlides(n) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  
 }
 
 
