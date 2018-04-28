@@ -1,4 +1,13 @@
 <!DOCTYPE html>
+<?php
+
+	include('php/content_load.php');
+
+
+
+
+?>
+
 <html>
 
 <head>
@@ -8,9 +17,8 @@
 
 <link href="https://fonts.googleapis.com/css?family=Comfortaa|Josefin+Sans|Lato|Source+Sans+Pro|Tajawal|Titillium+Web|Ubuntu" rel="stylesheet">	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	<script type="text/javascript" src="js/home.js"></script>
-
+<script type="text/javascript" src="js/home.js"></script>
+	<script type="text/javascript" src="js/content_load.js"></script>
 
 </head>
 
@@ -126,7 +134,7 @@
 
 <div id="signup" class="modal">
 				<span onclick="document.getElementById('signup').style.display='none'" class="close" title="Close ">&times;</span>
-				<form class="modal-content" action="/action_page.php" style="border:1px solid #ccc">
+				<form class="modal-content" action="php/signup.php" style="border:1px solid #ccc" method="post">
     				<div class="container">
       					<h1>Sign Up</h1>
 						<p>Please fill in this form to create an account.</p>
@@ -145,21 +153,26 @@
 
 							<label for="Atoll"><b>Atoll </b></label>
 							<select required class="Atoll-select" name="Atoll" >
+									<option value=""></option>
+								<?php  echo fill_atoll($connect); ?>
 
 							</select>
 
 							<br>
 
 
-							<label for="Address"><b>Island </b></label>
+							<label for="island"><b>Island </b></label>
 							<select required class="Island-select" name="Island" >
+
+								<option value=""></option>
+
 
 							</select>
 
 							<br>
 
 						  <label for="email"><b>Email</b></label>
-						  <input type="text" placeholder="Enter Email" name="email" required>
+						  <input type="text" placeholder="Enter Email" name="Email" required>
 
 						  <label for="psw"><b>Password</b></label>
 						  <input type="password" placeholder="Enter Password" name="psw" required>

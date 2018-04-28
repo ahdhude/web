@@ -18,7 +18,7 @@
   <?php
   include('nav.html');
   include ('carosel.html');
-  include('content.html');
+  include('content.php');
 ?>
 
 </body>
